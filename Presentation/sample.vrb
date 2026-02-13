@@ -1,0 +1,47 @@
+\frametitle{Thermally Activated Flow Rule}
+\justifying
+
+Dislocation motion is \textbf{thermally activated}.
+Slip rate on system $\alpha$~\cite{kocks2003}:
+\[
+  \dot\gamma^\alpha = \dot\gamma_\text{ref}\;
+  \exp\!\Biggl[\!-\frac{\Delta G_0}{k_B T}
+  \biggl(1 - \Bigl(\frac{\tau_\text{eff}^\alpha}{S_\text{th}^\alpha}\Bigr)^{\!p}
+  \biggr)^{\!q}\;\Biggr]
+  \;\text{sgn}(\tau_\text{drive}^\alpha)
+\]
+
+\vspace{0.2em}
+\begin{columns}[T]
+\begin{column}{0.45\textwidth}
+\textbf{Parameters:}
+\begin{itemize}\setlength\itemsep{1pt}\small
+  \item $\dot\gamma_\text{ref}=10^{7}\;\text{s}^{-1}$
+  \item $\Delta G_0=9.5\times10^{-19}$ J
+  \item $p=0.78$, $q=1.15$
+  \item $S_\text{th}$: thermal resistance
+\end{itemize}
+\end{column}
+\begin{column}{0.52\textwidth}
+\centering
+\begin{tikzpicture}
+    \begin{axis}[
+        width=0.95\textwidth, height=4cm,
+        axis lines=left,
+        xlabel={\small $\tau_\text{eff}/S_\text{th}$},
+        ylabel={\small $\Delta G/\Delta G_0$},
+        xtick={0,0.5,1}, ytick={0,0.5,1},
+        domain=0:1, samples=80,
+        xmin=0, xmax=1.08, ymin=0, ymax=1.12,
+        grid=major, no markers,
+        legend pos=north east,
+        legend style={font=\tiny, fill opacity=0.8},
+    ]
+        \addplot[thick, blue] expression {(1-x^0.78)^1.15};
+        \addlegendentry{$p{=}0.78,q{=}1.15$}
+        \addplot[dashed, gray] expression {(1-x)};
+        \addlegendentry{Box ($p{=}q{=}1$)}
+    \end{axis}
+\end{tikzpicture}
+\end{column}
+\end{columns}
