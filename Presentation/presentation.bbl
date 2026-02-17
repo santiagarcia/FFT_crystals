@@ -1,0 +1,67 @@
+\begin{thebibliography}{9}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Tomé et~al.(1984)Tomé, Canova, Kocks, Christodoulou, and
+  Jonas]{tome1984}
+Carlos~N. Tomé, Gilles~R. Canova, U.~Fred Kocks, Nicholas Christodoulou, and
+  John~J. Jonas.
+\newblock The relation between macroscopic and microscopic strain hardening in
+  {F.C.C.} polycrystals.
+\newblock \emph{Acta Metall.}, 32:\penalty0 1637--1653, 1984.
+
+\bibitem[Moulinec and Suquet(1994)]{moulinec1994}
+Hervé Moulinec and Pierre Suquet.
+\newblock A fast numerical method for computing the linear and nonlinear
+  mechanical properties of composites.
+\newblock \emph{C. R. Acad. Sci. Paris, Série II}, 318:\penalty0 1417--1423,
+  1994.
+
+\bibitem[Moulinec and Suquet(1998)]{moulinec1998}
+Hervé Moulinec and Pierre Suquet.
+\newblock A numerical method for computing the overall response of nonlinear
+  composites with complex microstructure.
+\newblock \emph{Comput. Methods Appl. Mech. Engrg.}, 157:\penalty0 69--94,
+  1998.
+
+\bibitem[Willot(2015)]{willot2015}
+François Willot.
+\newblock Fourier-based schemes for computing the mechanical response of
+  composites with accurate local fields.
+\newblock \emph{C. R. Mécanique}, 343:\penalty0 232--245, 2015.
+
+\bibitem[Zeman et~al.(2010)Zeman, Vondřejc, Novák, and Marek]{zeman2010}
+Jan Zeman, Jaroslav Vondřejc, Jan Novák, and Ivo Marek.
+\newblock Accelerating a {FFT}-based solver for numerical homogenization of
+  periodic media by conjugate gradients.
+\newblock \emph{Int. J. Numer. Meth. Engng.}, 82:\penalty0 1296--1313, 2010.
+
+\bibitem[Lucarini and Segurado(2022)]{lucarini2022}
+S.~Lucarini and J.~Segurado.
+\newblock {FFT} based approaches in micromechanics: fundamentals, methods and
+  applications.
+\newblock \emph{Modelling Simul. Mater. Sci. Eng.}, 30:\penalty0 023002, 2022.
+
+\bibitem[Lebensohn(2001)]{lebensohn2001}
+Ricardo~A. Lebensohn.
+\newblock N-site modeling of a {3D} viscoplastic polycrystal using {Fast
+  Fourier Transform}.
+\newblock \emph{Acta Mater.}, 49:\penalty0 2723--2737, 2001.
+
+\bibitem[Lebensohn et~al.(2012)Lebensohn, Kanjarla, and
+  Eisenlohr]{lebensohn2012}
+Ricardo~A. Lebensohn, Anand~K. Kanjarla, and Philip Eisenlohr.
+\newblock An elasto-viscoplastic formulation based on fast {Fourier} transforms
+  for the prediction of micromechanical fields in polycrystalline materials.
+\newblock \emph{Int. J. Plasticity}, 32--33:\penalty0 59--69, 2012.
+
+\bibitem[Lebensohn and Needleman(2016)]{lebensohn2016}
+Ricardo~A. Lebensohn and Alan Needleman.
+\newblock Numerical implementation of non-local polycrystal plasticity using
+  {Fast Fourier Transforms}.
+\newblock \emph{J. Mech. Phys. Solids}, 97:\penalty0 333--351, 2016.
+
+\end{thebibliography}

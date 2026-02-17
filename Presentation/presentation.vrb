@@ -1,0 +1,44 @@
+\frametitle{Per-Iteration Profiler}
+\justifying
+
+The \texttt{SolverProfiler} class instruments every phase of the solver
+with sub-millisecond timing:
+
+\vspace{0.3em}
+\begin{columns}[T]
+\begin{column}{0.52\textwidth}
+\begin{lstlisting}[language=Python,basicstyle=\ttfamily\footnotesize]
+from solver_utils import SolverProfiler
+
+prof = SolverProfiler()
+
+with prof.phase('fft'):
+    tau_hat = fft_3x3(tau)
+
+with prof.phase('green_op'):
+    gamma_hat = apply_green(tau_hat,
+                            n_field, Ainv)
+
+with prof.phase('ifft'):
+    gamma = ifft_3x3(gamma_hat)
+
+print(prof.summary("Basic scheme"))
+\end{lstlisting}
+\end{column}
+\begin{column}{0.45\textwidth}
+\textbf{Example output:}
+\begin{lstlisting}[language={},basicstyle=\ttfamily\footnotesize,keywordstyle={}]
+Basic scheme (0.038s total)
+  fft           0.014s (36.8%)
+  constitutive  0.010s (26.3%)
+  ifft          0.008s (21.1%)
+  green_op      0.004s (10.5%)
+  anderson      0.002s  (5.3%)
+\end{lstlisting}
+
+\vspace{0.3em}
+\textbf{Use case:}
+Identify bottlenecks, validate GPU speedup,
+compare solver configurations.
+\end{column}
+\end{columns}
